@@ -298,6 +298,7 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 10px;
     font-size: 16px;
     gap: 10px;
@@ -307,9 +308,8 @@ body {
 
 .middle-box .main-content {
     border-bottom: 0.5px solid #333;
-    min-width: 80%;
-    margin: 10px auto;
-    padding: 10px 20px;
+    max-width: 100%;
+    
 }
 
 .main-content .reel-head {
@@ -372,7 +372,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5px;
+    padding: 15px 5px;
 }
 
 .left-icons {
@@ -431,14 +431,17 @@ body {
 .story-image-wrapper {
     width: 60px;
     height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     padding: 2px;
-    background: linear-gradient(45deg, #f09433, #e6683c, #7d6f20, #cc2366, #23651f);
+    background: linear-gradient(45deg, #0b8a20, #a5593e, #9a8924, #cc2366, #253826);
 }
 
 .story-preview-image {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
     border: 2px solid white;
     object-fit: cover;
