@@ -304,11 +304,12 @@ body {
     gap: 10px;
     overflow-y: auto;
     overflow-x: hidden;
+    padding: 0px 20px;
 }
 
 .middle-box .main-content {
     border-bottom: 0.5px solid #333;
-    max-width: 100%;
+    max-width: 95%;
     
 }
 
@@ -349,9 +350,8 @@ body {
 
 .main-content .reels-images {
     min-height: 500px;
-    max-height: 600px;
-    min-width: 350px;
-    max-width: 420px;
+    max-height: 400px;
+    max-width: 400px;
     border: 1px solid #333;
     display: flex;
     justify-content: center;
