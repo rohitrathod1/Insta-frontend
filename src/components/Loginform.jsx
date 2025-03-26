@@ -32,7 +32,7 @@ const Loginform = () => {
             errorMessages.forEach((msg, index) => {
                 setTimeout(() => {
                     toast.error(msg, { position: "top-right", autoClose: 3000, theme: "dark" });
-                }, index * 1500);
+                }, index * 1000);
             });
             return;
         }
@@ -46,7 +46,7 @@ const Loginform = () => {
 
         setTimeout(() => {
             navigate("/home");
-        }, 2000);
+        }, 1500);
     };
 
     const handleChange = (e) => {

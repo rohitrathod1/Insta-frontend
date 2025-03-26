@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@87.5,500&display=swap');
 
+/* ==================== BASE STYLES ==================== */
 body {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-variation-settings: "wdth" 1;
-    /* overflow-x: hidden; */
 }
 
 * {
@@ -14,14 +14,12 @@ body {
     box-sizing: border-box;
 }
 
+/* ==================== HOME LAYOUT ==================== */
 .home-box {
     display: flex;
-    /* margin: auto;
-    width: 90vw; */
-
 }
 
-/* login-form styling  */
+/* ==================== LOGIN FORM ==================== */
 .form-box {
     background: linear-gradient(90deg, #6a0dad, #ff4500);
     display: flex;
@@ -84,10 +82,6 @@ body {
     gap: 30px;
 }
 
-.main-box span {
-    cursor: pointer;
-}
-
 .btns input {
     background: linear-gradient(90deg, #6a0dad, #ff4500);
     color: #fff;
@@ -116,7 +110,6 @@ body {
     display: flex;
     z-index: 10;
     padding: 0 20px;
-
 }
 
 .meta img {
@@ -138,37 +131,13 @@ body {
     width: 100px;
 }
 
-@media (max-width: 420px) {
-    .form-box {
-        background: black;
-
-    }
-
-    .main-box {
-        width: 100vw;
-        height: 100vh;
-        gap: 10px;
-        border: none;
-
-    }
-
-    .btns {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-
-    }
-
-}
-
-/* login-form styling end */
-/* left-side styling */
+/* ==================== LEFT SIDEBAR ==================== */
 .left-box {
     position: sticky;
     top: 0;
     height: 100vh;
     width: 20vw;
+    border-right: 0.5px solid #333;
 
 }
 
@@ -196,7 +165,6 @@ body {
     transition-timing-function: ease-in;
 }
 
-
 .li-name .icons {
     font-size: 22px;
 }
@@ -214,7 +182,6 @@ body {
 .img-block:hover {
     background: #121516;
     transition-timing-function: ease-in;
-
 }
 
 .img-block .profile-text {
@@ -229,20 +196,20 @@ body {
     border-radius: 50%;
 }
 
-
-/* left-side styling end */
-
-/* rightside styling */
-
+/* ==================== RIGHT SIDEBAR ==================== */
 .right-box {
     position: sticky;
-    top: 10px;
+    top: 0px;
     height: 100vh;
     width: 25vw;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
-    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-left: 0.5px solid #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+
 }
 
 .right-box .profile-content {
@@ -250,11 +217,12 @@ body {
     align-items: center;
     padding: 12px 0px 10px 15px;
     gap: 20px;
+    
 }
 
 .profile-img img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
 }
 
@@ -267,7 +235,7 @@ body {
 .profile-name span {
     color: #a8a8a8;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .right-box .suggesting {
@@ -298,7 +266,7 @@ body {
 .profile-name .followers {
     color: #a8a8a8;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .right-bottom {
@@ -308,86 +276,39 @@ body {
 .right-bottom .bottom-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 2px;
+    gap: 1px;
     padding: 10px 10px 15px 25px;
 }
 
 .bottom-nav span {
     color: #a8a8a8;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .meta span {
     padding: 10px 10px 10px 25px;
     color: #a8a8a8;
-    font-size: 18px;
+    font-size: 14px;
 }
 
-
-/* rightside styling */
-
-/* middleside styling */
+/* ==================== MIDDLE CONTENT (FEED) ==================== */
 .middle-box {
     min-height: 100vh;
     width: 40vw;
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     font-size: 16px;
-    gap: 50px;
+    gap: 10px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-.middle-box .status-bar {
-    border: 2px solid wheat;
-    position: relative;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-}
-
-.status-bar .profile-card {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    cursor: pointer;
-}
-
-.profile-card .profile-image-container {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-    padding: 2px;
-}
-
-.profile-image-container .profile-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 4px solid black;
-}
-
-.profile-card .profile-n {
-    max-width: 250px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* main content */
 .middle-box .main-content {
-    border: 0.5px solid #333;
+    border-bottom: 0.5px solid #333;
     min-width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 10px 20px;
 }
 
@@ -431,8 +352,7 @@ body {
     max-height: 600px;
     min-width: 350px;
     max-width: 420px;
-    border-bottom: 1px solid #333;
-    border-top: 1px solid #333;
+    border: 1px solid #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -447,7 +367,6 @@ body {
 .username {
     font-weight: bold;
 }
-
 
 .post-actions {
     display: flex;
@@ -466,7 +385,6 @@ body {
     cursor: pointer;
 }
 
-
 .post-caption {
     padding: 5px 10px;
 }
@@ -483,23 +401,235 @@ body {
     margin-top: 5px;
 }
 
+/* ==================== STORIES SECTION ==================== */
+.instagram-stories {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    max-width: 100%;
+}
 
-/* main content end */
+.story-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+    padding: 10px 0;
+    scrollbar-width: none;
+}
 
-/* Tablet Screens (1024px and below) */
+.story-container::-webkit-scrollbar {
+    display: none;
+}
+
+.story-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    flex: 0 0 auto;
+    width: 80px;
+}
+
+.story-image-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #7d6f20, #cc2366, #23651f);
+}
+
+.story-preview-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.story-username {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80px;
+}
+
+.story-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-bars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 2px;
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.progress-bar.active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.progress-bar.completed {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.story-user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-viewer-username {
+    font-weight: bold;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.story-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.story-image {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* ==================== MOBILE FOOTER ==================== */
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.mobile-footer {
+    display: none;
+    height: 60px;
+    background-color: #000;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    color: #fff;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.footer-icon.active {
+    transform: scale(1.05);
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+@media (max-width: 420px) {
+    .form-box {
+        background: black;
+    }
+    .main-box {
+        width: 100vw;
+        height: 100vh;
+        gap: 10px;
+        border: none;
+    }
+    .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-footer {
+        display: flex;
+    }
+}
+
+@media (max-width: 400px) {
+    .mobile-footer {
+        padding: 0 5px;
+    }
+    .footer-icon {
+        padding: 10px 5px;
+    }
+}
+
 @media (max-width: 1024px) {
     .left-box {
         width: 25vw;
     }
-
     .right-box {
         display: none;
     }
-
     .middle-box {
         width: 60vw;
     }
-
     .home-box {
         width: 90vw;
         gap: 50px;
@@ -507,30 +637,47 @@ body {
     }
 }
 
-/* Small Tablets & Large Phones (768px and below) */
 @media (max-width: 768px) {
-
     .left-box,
     .right-box {
         display: none;
     }
-
     .middle-box {
         width: 100vw;
         max-width: 500px;
         padding: 20px;
     }
-
     .home-box {
         width: 100vw;
         justify-content: center;
     }
+ 
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .left-box, 
+  .right-box, 
+  .middle-box {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+  
+  .left-box::-webkit-scrollbar,
+  .right-box::-webkit-scrollbar,
+  .middle-box::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-/* Mobile Screens (480px and below) */
 @media (max-width: 480px) {
     .middle-box {
         width: 100vw;
-        padding: 15px;
+        padding: 5px;
     }
 }

@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as solidHeart, faBookmark as solidBookmark } from "@fortawesome/free-solid-svg-icons";
 import { faHeart, faComment, faBookmark, faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+import Statubar from "./Statusbar";
 const Middleside = () => {
-  
   return (
     <div>
       <div className="middle-box">
+        <Statubar />
         <div className="main-content">
           <div className="reel-head">
             <div className='reel-img-block'>
