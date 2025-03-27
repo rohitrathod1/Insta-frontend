@@ -35,14 +35,40 @@ const Leftside = () => {
 
         <div className="list-box">
           <ul>
-            <li className='li-name home-btn'><FontAwesomeIcon icon={faHouse} className='icons' /><p> Home</p></li>
-            <li className='li-name'><FontAwesomeIcon icon={faMagnifyingGlass} /> <p>Search</p></li>
-            <li className='li-name'><FontAwesomeIcon icon={faCompass} /> <p>Explorer</p></li>
-            <li className='li-name'><FontAwesomeIcon icon={faCirclePlay} /> <p>Reels</p></li>
-            <li className='li-name'><FontAwesomeIcon icon={faPaperPlane} /> <p>Message</p></li>
-            <li className='li-name'><FontAwesomeIcon icon={faHeart} /> <p>Notification</p></li>
-            <li className='li-name'><FontAwesomeIcon icon={faSquarePlus} /><p> Create</p></li>
-            <li className='li-name'><FontAwesomeIcon icon={faSquarePollVertical} /> <p>Dashboard</p></li>
+            <li className='li-name home-btn'><lord-icon src="https://cdn.lordicon.com/jeuxydnh.json" trigger="click" state="morph-neighbourhood" colors="primary:#eeca66,secondary:#08a88a"></lord-icon><p> Home</p></li>
+            <li className='li-name'><lord-icon src="https://cdn.lordicon.com/wjyqkiew.json"
+              trigger="click"
+              state="morph-cross"
+              colors="primary:#eeca66,secondary:#08a88a"></lord-icon><p>Search</p></li>
+            <li className='li-name'><lord-icon
+              src="https://cdn.lordicon.com/qfwgmyhc.json"
+              trigger="click"
+              stroke="bold"
+              colors="primary:#eeca66,secondary:#08a88a"
+            >
+            </lord-icon><p>Reels</p></li>
+            <li className='li-name'><lord-icon
+    src="https://cdn.lordicon.com/ozlkyfxg.json"
+    trigger="click"
+    colors="primary:#bcee66,secondary:#e8e230">
+</lord-icon><p>Message</p></li>
+            <li className='li-name'><lord-icon
+    src="https://cdn.lordicon.com/aydxrkfl.json"
+    trigger="click"
+    state="morph-glitter"
+    colors="primary:#bcee66,secondary:#e8e230">
+</lord-icon><p>Notification</p></li>
+            <li className='li-name'><lord-icon
+    src="https://cdn.lordicon.com/wsaaegar.json"
+    trigger="click"   delay="1000"
+    state="in-reveal"
+    colors="primary:#bcee66,secondary:#e8e230">
+</lord-icon><p> Create</p></li>
+            <li className='li-name'><lord-icon
+    src="https://cdn.lordicon.com/fcyboqbm.json"
+    trigger="click"
+    colors="primary:#bcee66,secondary:#e8e230">
+</lord-icon><p>Dashboard</p></li>
             <li className='li-name'><FontAwesomeIcon icon={faBars} /><p> More</p></li>
           </ul>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loginform from "./components/Loginform"; // Import Login Page
-import Home from "./components/Home"; // Import Home Page (with all components)
+import Home from "./Routes/Body.Route"; // Import Home Page (with all components)
 
 function App() {
   return (
