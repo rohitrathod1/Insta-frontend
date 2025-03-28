@@ -7,7 +7,9 @@ const Middleside = () => {
   return (
     <div>
       <div className="middle-box">
+        <div className="status">
         <Statubar />
+        </div>
         <div className="main-content">
           <div className="reel-head">
             <div className='reel-img-block'>

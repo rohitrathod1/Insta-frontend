@@ -13,8 +13,7 @@ import Userid from "../Buttons/Userid";
 
 const BtnsRoute = () => {
   return (
-    <div className="right-box">
-      <div className="list-box">
+    <div className="middle-box">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
@@ -26,7 +25,6 @@ const BtnsRoute = () => {
           <Route path="/more" element={<More />} />
           <Route path="/Userid" element={<Userid />} />
         </Routes>
-      </div>
     </div>
   );
 };

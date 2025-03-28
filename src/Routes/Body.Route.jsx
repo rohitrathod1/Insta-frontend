@@ -11,11 +11,11 @@ const BodyRoute = () => {
   return (
     <div className="home-box">
       <Leftside />
-      <Middleside />
       <Routes>
-        <Route path="/*" element={<Rightside />} />
+        <Route path="/*" element={<Middleside />} />
         <Route path="/buttons/*" element={<BtnsRoute />} /> {/* All Button Pages */}
       </Routes>
+      <Rightside />
       <Footer />
     </div>
   );
