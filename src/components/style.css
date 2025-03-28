@@ -136,47 +136,57 @@ body {
     position: sticky;
     top: 0;
     height: 100vh;
-    width: 20vw;
+    width: 23vw;
     border-right: 0.5px solid #333;
-
 }
 
-.list-box ul {
+.list-box .list-box-ul{
+    height: 80%;
+    width: 80%;
+}
+
+ul .ul-li{
     display: flex;
-    padding: 0px 0px 10px 30px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.list-box-ul ul .ul-li:hover {
+    background-color: #121516;
+    transition-timing-function: ease-in;
+}
+
+.list-box-ul ul {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .list-box .li-name {
     display: flex;
     align-items: center;
-    gap: 20px;
     font-size: 20px;
     height: 45px;
-    width: 250px;
-    border-radius: 8px;
     padding: 20px;
     cursor: pointer;
 }
 
-.list-box .li-name:hover {
-    background-color: #121516;
-    transition-timing-function: ease-in;
-}
-
-.li-name .icons {
-    font-size: 22px;
+.li-name .awesome{
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
 }
 
 .img-block {
-    width: 250px;
+    width: 200px;
     display: flex;
     align-items: center;
     padding: 12px 0px 10px 15px;
     gap: 30px;
     border-radius: 10px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .img-block:hover {
@@ -209,7 +219,6 @@ body {
     border-left: 0.5px solid #333;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-weight: 500;
-
 }
 
 .right-box .profile-content {
@@ -217,7 +226,6 @@ body {
     align-items: center;
     padding: 12px 0px 10px 15px;
     gap: 20px;
-    
 }
 
 .profile-img img {
@@ -243,17 +251,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px 10px 20px;
+    width: 345px;
 }
 
 .suggesting p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: rgb(168, 168, 168);
     line-height: 18px;
 }
 
 .suggesting span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     color: rgb(245, 245, 245);
     line-height: 16px;
@@ -310,7 +319,6 @@ body {
 .middle-box .main-content {
     border-bottom: 0.5px solid #333;
     max-width: 95%;
-    
 }
 
 .main-content .reel-head {
@@ -404,7 +412,7 @@ body {
 /* ==================== STORIES SECTION ==================== */
 .instagram-stories {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    max-width: 100%;
+    width: 100%;
 }
 
 .story-container {
@@ -457,99 +465,6 @@ body {
     max-width: 80px;
 }
 
-.story-viewer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-}
-
-.progress-bars {
-    display: flex;
-    gap: 2px;
-    margin-bottom: 10px;
-}
-
-.progress-bar {
-    height: 2px;
-    flex-grow: 1;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.progress-bar.active {
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-.progress-bar.completed {
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-.story-user-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.story-viewer-username {
-    font-weight: bold;
-}
-
-.close-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.story-content {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.story-image {
-    max-width: 100%;
-    max-height: 80vh;
-    object-fit: contain;
-}
-
-.nav-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.3);
-    border: none;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.prev-button {
-    left: 20px;
-}
-
-.next-button {
-    right: 20px;
-}
-
-.nav-button:hover {
-    background: rgba(255, 255, 255, 0.5);
-}
-
 /* ==================== MOBILE FOOTER ==================== */
 .footer-container {
     position: fixed;
@@ -574,8 +489,8 @@ body {
 }
 
 .footer-icon lord-icon{
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     transition: all 0.2s ease;
     flex-shrink: 0;
 }
@@ -584,7 +499,30 @@ body {
     transform: scale(1.05);
 }
 
-/* ==================== RESPONSIVE STYLES ==================== */
+/* ==================== SCROLLBAR HIDING ==================== */
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.left-box, 
+.right-box, 
+.middle-box {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.left-box::-webkit-scrollbar,
+.right-box::-webkit-scrollbar,
+.middle-box::-webkit-scrollbar {
+    display: none;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
 @media (max-width: 420px) {
     .form-box {
         background: black;
@@ -620,18 +558,29 @@ body {
 
 @media (max-width: 1024px) {
     .left-box {
-        width: 25vw;
+        width: 8vw;
     }
     .right-box {
+        width: 30vw;
+    }
+    .left-box .img-block{
         display: none;
     }
     .middle-box {
-        width: 60vw;
+        width: 45vw;
     }
     .home-box {
-        width: 90vw;
-        gap: 50px;
+        width: 100vw;
         margin: auto;
+    }
+    .list-box .ul-li {
+        padding: 0px 0px 0px 20px;
+    }
+    .list-box .ul-li p {
+        display: none;
+    }
+    .list-box .li-name{
+        padding: 0;
     }
 }
 
@@ -649,28 +598,6 @@ body {
         width: 100vw;
         justify-content: center;
     }
- 
-::-webkit-scrollbar {
-    display: none;
-  }
-  
-  html, body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  
-  .left-box, 
-  .right-box, 
-  .middle-box {
-    -ms-overflow-style: none;
-    scrollbar-width: none; 
-  }
-  
-  .left-box::-webkit-scrollbar,
-  .right-box::-webkit-scrollbar,
-  .middle-box::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {

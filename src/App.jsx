@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Loginform from "./components/Loginform"; // Import Login Page
-import Home from "./Routes/Body.Route"; // Import Home Page (with all components)
+import Loginform from "./components/Loginform";
+import Home from "./Routes/Body.Route";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Loginform />} />   {/* Login Page */}
-        <Route path="/home" element={<Home />} /> {/* Home Page with all components */}
+        <Route path="/" element={<Loginform />} />
+        <Route path="/home/*" element={<Home />} />
       </Routes>
     </Router>
   );

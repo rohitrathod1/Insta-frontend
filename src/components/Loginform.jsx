@@ -46,7 +46,7 @@ const Loginform = () => {
 
         setTimeout(() => {
             navigate("/home");
-        }, 1500);
+        }, 1000);
     };
 
     const handleChange = (e) => {
