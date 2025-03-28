@@ -147,17 +147,24 @@ ul .ul-li {
     align-items: center;
     cursor: pointer;
     border-radius: 8px;
+    position: relative;
 }
 
-.list-box-ul ul .ul-li:hover {
-    background-color: #121516;
-    transition-timing-function: ease-in;
+.ul-li.active::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: rgb(65, 56, 56);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
 }
 
 .list-box-ul ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 0 0 20px 0;
 }
 
 .list-box .li-name {
@@ -231,7 +238,7 @@ ul .ul-li {
     border-radius: 50%;
 }
 
-.follow-btn p {
+.follow-btns p {
     color: rgb(14, 126, 218);
     font-size: 14px;
     font-weight: bold;
