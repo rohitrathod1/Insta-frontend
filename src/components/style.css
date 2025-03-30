@@ -472,6 +472,7 @@ ul .ul-li {
 }
 /* ==================== FOOTER ==================== */
 .footer-container {
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -577,6 +578,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .footer-container{
+        display: block;
+    }
     .mobile-footer {
         display: flex;
     }
