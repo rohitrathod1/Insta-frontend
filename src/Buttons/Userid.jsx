@@ -29,7 +29,6 @@ const Userid = () => {
             <h2>{user.username}</h2>
             <button className="edit-btn">Edit Profile</button>
             <button className="archive-btn">View archive</button>
-            <div className="settings-icon">⚙</div>
           </div>
           <div className="profile-stats">
             <span>{user.posts} posts</span>

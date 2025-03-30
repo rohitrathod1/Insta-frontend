@@ -470,39 +470,65 @@ ul .ul-li {
     text-overflow: ellipsis;
     max-width: 80px;
 }
-
-/* ==================== MOBILE FOOTER ==================== */
+/* ==================== FOOTER ==================== */
 .footer-container {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    overflow: hidden;
+    width: 100%;
+    background-color: #000;
     z-index: 100;
+    border-top: 0.5px solid #333;
+    transform: translateZ(0); 
+    will-change: transform; 
 }
 
 .mobile-footer {
-    display: none;
+    display: flex;
     height: 60px;
-    background-color: #000;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     max-width: 100vw;
-    box-sizing: border-box;
     padding: 0 15px;
-    margin: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    transform: translateZ(0);
+}
+
+.footer-icon.active::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: rgb(65, 56, 56);
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
 }
 
 .footer-icon lord-icon {
     width: 25px;
     height: 25px;
     transition: all 0.2s ease;
-    flex-shrink: 0;
+    display: block; 
 }
 
-.footer-icon.active {
-    transform: scale(1.05);
+.footer-icon.active lord-icon {
+    transform: scale(1.1);
 }
 
 /* ==================== SCROLLBAR HIDING ==================== */
@@ -570,7 +596,9 @@ body {
     .left-box {
         width: 8vw;
     }
-
+    .ul-li.active::after {
+        width: 100%;
+    }
     .right-box {
         width: 30vw;
     }
