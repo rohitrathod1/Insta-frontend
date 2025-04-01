@@ -25,10 +25,10 @@ const Leftside = () => {
               >
                 <li className="li-name">
                   <lord-icon
-                    src="https://cdn.lordicon.com/jeuxydnh.json"
-                    trigger="click"
-                    state="morph-neighbourhood"
-                    colors="primary:#eeca66,secondary:#08a88a"
+                     src="https://cdn.lordicon.com/jeuxydnh.json"
+                     trigger="hover"
+                     stroke="bold"
+                     colors="primary:#ffffff,secondary:#ffffff"
                   ></lord-icon>
                 </li>
                 <p>Home</p>
@@ -42,8 +42,9 @@ const Leftside = () => {
                   <lord-icon
                     src="https://cdn.lordicon.com/wjyqkiew.json"
                     trigger="click"
+                    stroke="bold"
                     state="morph-cross"
-                    colors="primary:#eeca66,secondary:#08a88a"
+                    colors="primary:#ffffff,secondary:#ffffff"
                   ></lord-icon>
                 </li>
                 <p>Search</p>
@@ -58,7 +59,7 @@ const Leftside = () => {
                     src="https://cdn.lordicon.com/qfwgmyhc.json"
                     trigger="click"
                     stroke="bold"
-                    colors="primary:#eeca66,secondary:#08a88a"
+                    colors="primary:#ffffff,secondary:#ffffff"
                   ></lord-icon>
                 </li>
                 <p>Reels</p>
@@ -72,7 +73,8 @@ const Leftside = () => {
                   <lord-icon
                     src="https://cdn.lordicon.com/ozlkyfxg.json"
                     trigger="click"
-                    colors="primary:#bcee66,secondary:#e8e230"
+                    stroke="bold"
+                    colors="primary:#ffffff,secondary:#ffffff"
                   ></lord-icon>
                 </li>
                 <p>Message</p>
@@ -87,7 +89,8 @@ const Leftside = () => {
                     src="https://cdn.lordicon.com/aydxrkfl.json"
                     trigger="click"
                     state="morph-glitter"
-                    colors="primary:#bcee66,secondary:#e8e230"
+                    stroke="bold"
+                    colors="primary:#ffffff,secondary:#ffffff"
                   ></lord-icon>
                 </li>
                 <p>Notification</p>
@@ -101,7 +104,8 @@ const Leftside = () => {
                   <lord-icon
                     src="https://cdn.lordicon.com/wsaaegar.json"
                     trigger="click"
-                    colors="primary:#9cf4a7,secondary:#eeca66"
+                    stroke="bold"
+                    colors="primary:#ffffff,secondary:#ffffff"
                   ></lord-icon>
                 </li>
                 <p>Create</p>
@@ -115,7 +119,8 @@ const Leftside = () => {
                   <lord-icon
                     src="https://cdn.lordicon.com/fcyboqbm.json"
                     trigger="click"
-                    colors="primary:#bcee66,secondary:#e8e230"
+                    stroke="bold"
+                    colors="primary:#ffffff,secondary:#ffffff"
                   ></lord-icon>
                 </li>
                 <p>Dashboard</p>
