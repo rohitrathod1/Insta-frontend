@@ -79,12 +79,18 @@ const Loginform = () => {
                         <input type="password" name="password" ref={passwordRef} value={form.password} onChange={handleChange} placeholder='Password' />
                         <p>Forget password?</p>
                     </div>
-                    <div className="errors">
-                        {errors.password && <p className="red">{errors.password.message}</p>}
-                        {errors.username && <div className='red'>{errors.username.message}</div>}
-                    </div>
+
                     <div className="btns">
-                        <input disabled={isSubmitting} type="submit" value="Login" />
+                        <div className="loading">
+                            <input disabled={isSubmitting} type="submit" value="Login" />
+                            {isSubmitting && (<div className="loading-icon"><lord-icon
+                                src="https://cdn.lordicon.com/jxhgzthg.json"
+                                trigger="loop"
+                                stroke="bold"
+                                state="loop-cycle"
+                                colors="primary:#e8b730,secondary:#e8b730">
+                            </lord-icon></div>)}
+                        </div>
                         <div className="line">
                             <div className="lines"></div>
                             <p>OR</p>
