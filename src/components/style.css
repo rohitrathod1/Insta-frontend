@@ -22,7 +22,6 @@ body {
 
 /* ==================== LOGIN FORM ==================== */
 .form-box {
-    background: linear-gradient(90deg, #6a0dad, #ff4500);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,21 +29,26 @@ body {
     height: 100vh;
     margin: auto;
     padding: 25px;
+    background-image: 
+    linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+    linear-gradient(to bottom, #2a25250a 1px, transparent 1px);
+
 }
 
-.main-box {
-    border: 2px solid rgb(21, 21, 108);
+.form-box .main-box {
+    border: 2px solid rgb(150, 150, 161);
     border-radius: 40px;
     width: 350px;
     padding: 20px;
     height: 600px;
-    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-
+.form-box .main-box span{
+    color: rgb(52, 52, 211);
+}
 .inps {
     padding: 0px 0px 50px 0px;
     display: flex;
@@ -57,19 +61,21 @@ body {
 }
 
 .inps input {
-    background: white;
     padding: 10px;
     border-radius: 5px;
     border: none;
-    width: 250px;
-    font-size: 12px;
+    width: 280px;
+    font-size: 13px;
+    outline: none;
+    background: rgba(2, 11, 30, 0.566);
     color: rgb(255, 255, 255);
-    background-color: #493544;
+    border: 1px solid #343033;
 }
 
 .inps p {
     position: absolute;
     bottom: 15px;
+    color: rgb(18, 71, 230);
     right: 35px;
     font-size: 12px;
     cursor: pointer;
@@ -94,13 +100,24 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-
 .line {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-icon{
+    position: absolute;
+    background: linear-gradient(90deg, #6a0dad, #ff4500);
+    border: none;
+    cursor: wait;
+    width: 260px;
+    border-radius: 8px;
+}
 .lines {
     height: 2px;
     width: 100px;
@@ -558,14 +575,7 @@ body {
 
 /* ==================== MEDIA QUERIES ==================== */
 @media (max-width: 420px) {
-    .form-box {
-        background: black;
-    }
-
-    .main-box {
-        width: 100vw;
-        height: 100vh;
-        gap: 10px;
+    .form-box .main-box {
         border: none;
     }
 
