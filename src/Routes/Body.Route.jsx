@@ -13,7 +13,7 @@ const BodyRoute = () => {
       <Leftside />
       <Routes>
         <Route path="/*" element={<Middleside />} />
-        <Route path="/buttons/*" element={<BtnsRoute />} /> {/* All Button Pages */}
+        <Route path="/buttons/*" element={<BtnsRoute />} />
       </Routes>
       <Rightside />
       <Footer />
